@@ -1,0 +1,26 @@
+section {
+    background: rgb(255, 255, 255);
+}
+
+.front-parallax {
+    height: 770px;
+    width: 100%;
+    background-size: cover;
+}
+
+.parallax-container {
+    height: 400px;
+    width: 100%;
+    background-size: cover;
+}
+
+.textbody {
+    padding-left: 30px;
+    padding-top: 100px;
+    padding-right: 30px;
+    background-color: rgb(255, 255, 255);
+}
+
+.navbar {
+    background-color: rgb(54, 50, 50);
+}
