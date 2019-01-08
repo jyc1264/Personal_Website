@@ -1,26 +1,45 @@
+/* general */
+#profile-pic {
+    max-width: 350px;
+    max-height: 400px;
+}
+
+.text-body {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
 section {
     background: rgb(255, 255, 255);
 }
 
+/* image stuff */
+.jumbotron {
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.container .image-container {
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+}
+
+#experience-image {
+    max-width: 280px;
+    max-height: 250px;
+}
+
+/* parallax stuff */
 .front-parallax {
     height: 770px;
-    width: 100%;
     background-size: cover;
+    padding-right: 15px;
 }
 
 .parallax-container {
+    padding-right: 15px;
     height: 400px;
-    width: 100%;
     background-size: cover;
-}
-
-.textbody {
-    padding-left: 30px;
-    padding-top: 100px;
-    padding-right: 30px;
-    background-color: rgb(255, 255, 255);
-}
-
-.navbar {
-    background-color: rgb(54, 50, 50);
 }

@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="./css/style.css">
         <link rel="stylesheet" href="./bootstrap-4.0.0-dist/css/bootstrap.min.css">
 
-        <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Montserrat|Raleway|Josefin+Sans|Permanent+Marker" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Montserrat|Raleway|Josefin+Sans|Permanent+Marker|Nunito" rel="stylesheet"> 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script src="./bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
         <script src="./parallax.js-1.5.0/parallax.min.js"></script>
@@ -20,7 +20,7 @@
                 font-size: 55px;
             }
             h2{
-                font-family: Josefin Sans;
+                font-family: Nunito;
                 font-style:bold;
                 font-size: 35px;
             }
@@ -48,7 +48,7 @@
         -->
 
         <!--Front Page-->
-        <div class="front-parallax" data-parallax="scroll" data-position="top" data-bleed="10" data-image-src="./images/Sakura.jpg">
+        <div class="front-parallax" data-parallax="scroll" data-position="top" data-bleed="10" data-image-src="./images/Sakura.jpg" style="width:100%">
             <div class="row h-100">
                 <div class="col-md-12 align-self-center" style="color: white">
                     <h3 class="text-center">Hi, I'm</h3>
@@ -103,7 +103,11 @@
                         </p>
                     </div>
                     <div class="col-sm-4 container">
-                            <img src="./images/snow-john.png" height="380" width="350">
+                        <div class="container" style="display: table">
+                            <div class="image-container">
+                                <img src="./images/snow-john.png" id="profile-pic" class="img-fluid" height="auto" width="100%">
+                            </div>
+                        </div>
                     </div>
                     <div class="col-sm-1 container"></div>
                 </div>
@@ -114,29 +118,51 @@
         <!--San Diego-->
         <div class="parallax-container" data-parallax="scroll" data-position="top" data-bleed="10" data-image-src="./images/San Diego - Sunset.jpg">
             <div class="row h-100">
-                <div class="col-md-12 align-self-center" style="color: white">
-                    <h1 class="text-center" style="font-size:60px;">
+                <div class="col-sm-12 align-self-center">
+                    <h1 class="text-center" style="font-size:60px; color: white">
                         <img src="./images/horizontal-white.png" width="80" height="50">
                         <strong>SAN DIEGO</strong>
                         <img src="./images/horizontal-white.png" width="80" height="50">
-                        </h1>
+                    </h1>
                 </div>
             </div>
         </div>
-        <!--/San Diego-->
+        <!--San Diego-->
 
         <!--What I've Done So Far-->
         <section>
-            <div class="textbody">
-                <h2 style="text-align:center">
+            <div class="container">
+                <!--Heading-->
+                <h2 style="text-align:center; padding-top: 40px">
                     <img src="./images/horizontal-black.png" width="80" height="40">
                     What I've Done so Far
                     <img src="./images/horizontal-black.png" width="80" height="40">
                 </h2>
-                <div class="row">
+                <!--/Heading-->
+                <div class="row" style="padding-top: 30px">
                     <div class="col-sm-1"></div>
-                    <div class="col-sm-6"></div>
-                    <div class="col-sm-4"></div>
+                    <div class="col-sm-4 container">
+                        <div class="container" style="display: table">
+                            <div class="image-container">
+                                <img src="./images/UCSD.png" id="experience-image" class="img-fluid" height="300" width="auto">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 container">
+                        <div style="font-size: 20px; font-family: Nunito; color: rgb(43, 153, 204)">
+                            <strong>University of California, San Diego</strong>
+                        </div>
+                        <div style="font-size: 15px; font-family: Nunito; color: rgb(51, 151, 51);padding-top: 3px;">
+                            B.S. in Computer Science, <i>In Progress: Expected 2021</i>
+                        </div>
+                        <div style="font-size: 15px; font-family: Nunito; padding-top: 2px">
+                            <strong>La Jolla, CA</strong>
+                        </div>
+                        <div style="font-family: Montserrat; padding-top: 20px">
+                            UCSD has been my home for just over a year now and the wonderful staff, faculty, and students
+                            have been a blessing to work with. 
+                        </div>
+                    </div>
                     <div class="col-sm-1"></div>
                 </div>
             </div>
