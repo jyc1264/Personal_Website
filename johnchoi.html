@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title> Parallax </title>
 
+        <link href="../Documents/hamburgers-master/dist/hamburgers.css" rel="stylesheet">
         <link rel="stylesheet" href="./css/style.css">
         <link rel="stylesheet" href="./bootstrap-4.0.0-dist/css/bootstrap.min.css">
 
@@ -33,9 +34,25 @@
                 font-size: 18px;
             }
         </style>
+
+        <script>
+            // Look for .hamburger
+            var hamburger = document.querySelector("hamburger");
+            // On click
+            hamburger.addEventListener("click", function() {
+                // Toggle class "is-active"
+                hamburger.classList.toggle("is-active");
+                // Do something else, like open/close menu
+            });
+        </script>
     </head>
 
     <body>
+        <button class="hamburger hamburger--slider" type="button">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
         <!--
         <section>
             <div class="container">
@@ -135,10 +152,11 @@
                 <!--Heading-->
                 <h2 style="text-align:center; padding-top: 40px">
                     <img src="./images/horizontal-black.png" width="80" height="40">
-                    What I've Done so Far
+                    What I've Done So Far
                     <img src="./images/horizontal-black.png" width="80" height="40">
                 </h2>
                 <!--/Heading-->
+                <!--UCSD-->
                 <div class="row" style="padding-top: 30px">
                     <div class="col-sm-1"></div>
                     <div class="col-sm-4 container">
@@ -153,7 +171,7 @@
                             <strong>University of California, San Diego</strong>
                         </div>
                         <div style="font-size: 15px; font-family: Nunito; color: rgb(51, 151, 51);padding-top: 3px;">
-                            B.S. in Computer Science, <i>In Progress: Expected 2021</i>
+                            <strong>B.S. in Computer Science, <i>In Progress: Expected 2021</i></strong>
                         </div>
                         <div style="font-size: 15px; font-family: Nunito; padding-top: 2px">
                             <strong>La Jolla, CA</strong>
@@ -165,6 +183,34 @@
                     </div>
                     <div class="col-sm-1"></div>
                 </div>
+                <!--/UCSD-->
+                <!--SPIS-->
+                <div class="row" style="padding-top: 30px">
+                    <div class="col-sm-4 container">
+                        <div class="container" style="display: table">
+                            <div class="image-container">
+                                <img src="./images/csbuliding.png" id="experience-image" class="img-fluid" height="auto" width="100%">
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="col-sm-5 container">
+                        <div style="font-size: 20px; font-family: Nunito; color: rgb(43, 153, 204)">
+                                <strong>UCSD CS Department (SPIS)</strong>
+                        </div>
+                        <div style="font-size: 15px; font-family: Nunito; color: rgb(51, 151, 51);padding-top: 3px;">
+                            <strong>Intern/Mentor, <i>Summer 2018</i></strong>
+                        </div>
+                        <div style="font-size: 15px; font-family: Nunito; padding-top: 2px">
+                            <strong>La Jolla, CA</strong>
+                        </div>
+                        <div style="font-family: Montserrat; padding-top: 20px">
+                            UCSD has been my home for just over a year now and the wonderful staff, faculty, and students
+                            have been a blessing to work with. 
+                        </div> 
+                    </div>
+                    <div class="col-sm-1"></div>
+                </div>
+                <!--/SPIS-->
             </div>
         </section>
         <!--/What I've Done So Far-->
